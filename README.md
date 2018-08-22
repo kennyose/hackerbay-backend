@@ -102,7 +102,7 @@ This Project is built with:
 
 - **NodeJS** - Javascript runtime engine
 - **ExpressJS** - Web Server Framework
-- **Mocha and Supertest** - Unit test
+- **Chai and chaiHttp** - Unit test
 
 ## API route
 
@@ -115,6 +115,13 @@ This Project is built with:
 - **POST** _http://localhost:8080/thumbnail_:
   - _Request_ - **url**[containing a URI of public image] in query of request.
   - _Response_ - a binary data in chunks.
+
+## Docker
+
+- Make sure you have Docker installed Locally
+- **DockerHub** - Pull this project docker image by running this command `docker pull kennyose/hackerbay-node`
+- Check container's image id by running `$ sudo docker ps -l`
+- Start project in docker container by running `$ sudo docker run -p 8080:8080 -it ${IMAGE}` - replace ${IMAGE} with container's image id.
 
 ## Caveats
 
