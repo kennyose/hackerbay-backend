@@ -1,0 +1,8 @@
+.nyc_output/
+coverage/
+images/
+node_modules/
+out/
+*.log
+README.md
+TODO

@@ -1,0 +1,476 @@
+/* 
+#0067F4
+#212529
+#5A6169
+#E9ECEF
+#00B8D8
+*/
+
+.color-pallette {
+  color: #0067f4;
+  color: #212529;
+  color: #5a6169;
+  color: #e9ecef;
+  color: #00b8d8;
+  color: #72e800;
+}
+
+.blue {
+  color: #72e800;
+}
+
+body {
+  color: #575757 !important;
+  background-color: #fafafa;
+  /* margin: 0; */
+}
+
+/* Reset Bootstrap Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+h6 a {
+  color: #4f9413;
+}
+
+h6 a:hover {
+  color: #79e11d;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.card-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Media Queries for Small Screens */
+
+@media screen and (max-width: 500px) {
+  .enter-amount {
+    font-size: 12px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Comfortaa', cursive, serif !important;
+}
+
+.navbar {
+  width: 100%;
+  border: 1px rgba(0, 0, 0, 0.05);
+  border-top: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.welcome {
+  position: relative;
+  min-height: 90vh;
+  /* min-height: 700px; */
+  background: url('../images/bitcoin-landing.jpg') no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+}
+
+.welcome::before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #5a6169;
+}
+
+.welcome * {
+  z-index: 1;
+}
+
+.intro-header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.intro-header h1 {
+  height: 100%;
+  font-family: 'Slabo 13px', serif;
+  padding: 0 20px;
+  border-bottom: 2px solid #72e800;
+  color: #fff;
+}
+
+.intro-header h3 {
+  color: #fff;
+}
+
+.intro-header .header-card {
+  max-width: 800px;
+  min-width: 320px;
+  opacity: 0.95;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7), 25px 0px 0px -10px rgba(255, 255, 255, 0.9),
+    -25px 0px 0px -10px rgba(255, 255, 255, 0.9);
+  /* 50px 0px 0px -20px rgba(255, 255, 255, 0.8),
+    -50px 0px 0px -20px rgba(255, 255, 255, 0.8); */
+}
+
+.main-pointer {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800px;
+  margin-top: 30px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.add-icon {
+  color: #72e800;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  font-size: 26px;
+  transform: translateY(-5px);
+}
+
+.amount-input {
+  max-width: 340px;
+}
+
+#calculator {
+  line-height: 36px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+#slider-amount,
+#slider-days {
+  max-width: 800px;
+  margin: 4.5rem auto;
+}
+
+.calcResult {
+  border: 3px solid #72e800;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-now {
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#calcResult {
+  margin-bottom: 0;
+}
+
+#numDays {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#main {
+  transform: translateY(-20px);
+  transition-delay: 2s;
+  transition: ease-in;
+}
+
+/* .icon {
+  font-size: 40px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  line-height: 0px;
+  border-radius: 100%;
+  background-color: rgba(0, 103, 244, 0.9);
+  color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+} */
+
+#about .card:before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: #5a6169;
+}
+
+#about .card * {
+  z-index: 1;
+}
+
+#about .card {
+  background: url('../images/blockchain-bg.jpg') no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+}
+
+.about-text h3 {
+  color: white;
+}
+
+.about-text h3:after {
+  display: block;
+  width: 150px;
+  height: 2px;
+  margin: 15px auto;
+  content: '';
+  background: #fff;
+}
+
+@media screen and (min-width: 750px) {
+  .about-text,
+  .cert-text,
+  .half-br {
+    border-right: 2px solid #72e800;
+  }
+  .header-card {
+    min-width: 500px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-text {
+    border-bottom: 2px solid #72e800;
+  }
+}
+
+#certs h3:after {
+  display: block;
+  width: 150px;
+  height: 2px;
+  margin: 15px auto;
+  content: '';
+  background: #72e800;
+}
+
+.footer * {
+  color: white !important;
+  background-color: rgb(72, 72, 72);
+}
+
+.footer .row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.footer-name:before,
+.footer-name:after {
+  display: block;
+  width: 150px;
+  height: 2px;
+  margin: 10px 0px;
+  content: '';
+  background: #72e800;
+  /* box-shadow: 1px 1px 1px #000; */
+}
+
+.auth-page-bottom h6:hover {
+  border-bottom: 1px solid #72e800;
+}
+
+.auth-page-bottom div:nth-child(2) {
+  border-right: 2px solid#72E800;
+  border-left: 2px solid #72e800;
+}
+
+.main-content {
+  background-color: white;
+  /* padding: 1.5em; */
+  text-align: left;
+  border-radius: 10px;
+}
+
+.card-plan {
+  text-align: center;
+}
+.card-plan:hover {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35);
+  transform: scale(1.05, 1.05);
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.card-plan-body {
+  padding: 0px;
+  text-align: center;
+}
+
+.the-price {
+  background-color: rgba(220, 220, 220, 0.17);
+  box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.the-price h1 {
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.subscript {
+  font-size: 1rem;
+}
+
+/* CSS-only ribbon styles    */
+.cnrflash {
+  /*Position correctly within container*/
+  position: absolute;
+  top: -9px;
+  right: -10px;
+  z-index: 2; /*Set overflow to hidden, to mask inner square*/
+  overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
+  width: 100px;
+  height: 100px;
+  border-radius: 3px 5px 3px 0;
+}
+.cnrflash-inner {
+  /*Set position, make larger then 			container and rotate 45 degrees*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+  height: 145px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -o-transform: rotate(45deg); /* Opera */
+  -moz-transform: rotate(45deg); /* Firefox */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+  -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+  -ms-transform-origin: 100% 100%; /* IE 9 */
+  -o-transform-origin: 100% 100%; /* Opera */
+  -moz-transform-origin: 100% 100%; /* Firefox */
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%),
+    linear-gradient(0deg, transparent 0%, rgba(1, 1, 1, 0.2) 50%);
+  background-size: 4px, auto, auto, auto;
+  background-color: #aa0101;
+  box-shadow: 0 3px 3px 0 rgba(1, 1, 1, 0.5), 0 1px 0 0 rgba(1, 1, 1, 0.5),
+    inset 0 -1px 8px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
+}
+.cnrflash-inner:before,
+.cnrflash-inner:after {
+  /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  width: 0;
+  height: 0;
+  border: 8px solid #800000;
+}
+.cnrflash-inner:before {
+  left: 1px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.cnrflash-inner:after {
+  right: 0;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.cnrflash-label {
+  /*Make the label look nice*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(1, 1, 1, 0.8);
+  font-size: 0.95em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bg-gold {
+  background-color: #dc962b !important;
+}
+
+.certificate {
+  max-height: 100px;
+}
+
+.footer-logo {
+  height: 170px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (min-width: 750px) {
+  .about-text,
+  .cert-text,
+  .half-br {
+    border-right: 2px solid #72e800;
+  }
+  .header-card {
+    min-width: 500px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-text {
+    border-bottom: 2px solid #72e800;
+  }
+
+  .card-plan {
+    margin-top: 1.5rem;
+  }
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+input .amount {
+  border: 2px solid black;
+}
